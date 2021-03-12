@@ -152,7 +152,7 @@
 
 /* ОСОБЕННОСТИ */
 
-.feature-list {
+.feature__list {
     display: flex;
     padding-top: 94px;
 }
@@ -384,13 +384,16 @@
 
 /* ПОРТФОЛИО */
 
-.elements-list {
-    display: flex;
-    flex-wrap: wrap;
+.project__section {
     padding-bottom: 64px;
 }
 
-.element {
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project__element {
     position: relative;
     width: 370px;
     margin-right: 30px;
@@ -400,28 +403,28 @@
     border: 1px solid var(--card-border-color);
 }
 
-.element:nth-child(3n) {
+.project__element:nth-child(3n) {
     margin-right: 0;
 }
 
-.project-link {
+.project__link {
     text-decoration: none;
 }
 
-.element:hover,
-.element:focus {
+.project__element:hover,
+.project__element:focus {
     background-color: var(--primary-white-color);
     border: 1px solid var(--card-border-color);
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-thumb {
+.project_thumb {
     position: relative;
     overflow: hidden;
 }
 
-.overlay {
+.project__overlay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,7 +447,7 @@
     transition: transform 250ms ar(--cubic);
 }
 
-.project-description {
+.project__description {
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
@@ -452,7 +455,7 @@
     color: var(--overlay-text-color);
 }
 
-.project-title {
+.project__title {
     padding: 20px 24px 4px;
 
     font-weight: bold;
@@ -462,7 +465,7 @@
     text-decoration: none;
 }
 
-.project-text {
+.project__text {
     width: 370px;
     padding-bottom: 4px;
     padding-left: 24px;
