@@ -1,0 +1,26 @@
+.site-nav >.logo {
+    display: flex;
+}
+
+.logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
+    
+    font-family: raleway, sans serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.logo--blue {
+    color: var(--accent-color);
+}
+
+&:hover, 
+&:focus {
+    color: var(--accent-color);
+}
