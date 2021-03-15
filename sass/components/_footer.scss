@@ -40,8 +40,8 @@
     display: flex;
     align-items: baseline;
     margin-left: 70px;
-    /*background-color: tomato;*/
 }
+
 .social-networks__item {
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@
     margin-right: 10px;
 }
 
-.social-networks__item:last-child {
+&:last-child {
     margin-right: 0;
 }
 
@@ -65,6 +65,11 @@
     background-color: rgba(255, 255, 255, 0.1);  
 }
 
+&:hover, 
+&:focus {
+    background-color: var(--accent-color);
+}
+
 .link-icon {
     display: flex;
     justify-content: center;
@@ -75,10 +80,6 @@
     fill: var(--primary-white-color); 
 }
 
-.social-networks__link:hover, 
-.social-networks__link:focus {
-    background-color: var(--accent-color);
-}
 
 .social-networks__icon svg:hover, 
 .social-networks__icon svg:focus {
@@ -101,8 +102,8 @@
     text-decoration: none;
 }
 
-.contact-item:hover, 
-.contact-item:focus {
+&:hover, 
+&:focus {
     font-style: normal;
     color: var(--accent-color); 
 }
@@ -117,8 +118,8 @@
     text-decoration: none;
 }
 
-.item-contact:hover, 
-.item-contact:focus {
+&:hover, 
+&:focus {
     font-style: normal;
     color: var(--accent-color); 
 }
@@ -126,6 +127,7 @@
 .signup {
     margin-left: auto;
 }
+
 .signup__title {
     display: block;
     margin-bottom: 20px;
@@ -151,7 +153,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     background-color: var(--footer-bg-color);
 }
 
@@ -173,7 +175,7 @@
     background-color: var(--accent-color);
 }
 
-.signup__button:focus {
+&:focus {
     outline: none;
 }
 

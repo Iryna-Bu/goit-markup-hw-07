@@ -1,4 +1,3 @@
-
 .section-title {
     padding-top: 94px;
     padding-bottom: 50px;
@@ -6,13 +5,14 @@
     font-size: 36px;
     line-height: 1.66;
     text-align: center;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 }
 
 .works {
     display:flex;
     justify-content: center;
-    padding-bottom: 94px;
+    padding-bottom:94px;
+   /* background-color: tomato;*/
 }
 
 .img {
@@ -24,6 +24,6 @@
     justify-content: center;
 }
 
-.item:last-child {
+&:last-child {
     margin-right: 0;
 }

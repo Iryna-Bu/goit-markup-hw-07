@@ -51,24 +51,24 @@
     border: 1px solid var(--button-border);
 }
 
-.close-btn:focus svg,
-.close-btn:hover svg {
+&:focus svg,
+&:hover svg {
     fill: var(--accent-color);
 }
 
-.form-title {
+.form__title {
     margin-bottom: 12px;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
 }
 
-.form-field {
+.form__field {
     display: flex;
     flex-direction: column;
 }
 
-.form-field label {
+.form__field label {
     margin-bottom: 4px;
     color: var(--grey-text);
     font-size: 12px;
@@ -77,14 +77,14 @@
     letter-spacing: 0.01em;
 }
 
-.input-thumb {
+.form__input-thumb {
     position: relative;
     content: "";
     margin-bottom: 10px;
 }
 
-.input-thumb:hover,
-.input-thumb:focus-within {
+&:hover,
+&:focus-within {
     fill: var(--accent-color);
     transition: transform 250ms var(--cubic);
 }
@@ -97,8 +97,8 @@
     border-radius: 4px;
 }
 
-.input-form:hover,
-.input-form:focus{
+&:hover,
+&:focus{
     outline: none;
     color: var(--accent-color);
     border-color: var(--accent-color);
@@ -112,7 +112,7 @@
     transform: translateY(-50%);
 }
 
-.textarea {
+.form__textarea {
     resize: none;
     height: 120px;
     margin-bottom: 20px;
@@ -128,8 +128,8 @@
     color: rgba(117, 117, 117, 0.5);
 }
 
-.textarea:hover,
-.textarea:focus {
+&:hover,
+&:focus {
     border-color: var(--accent-color);
     outline: none;
     transition: transform 250ms var(--cubic);
@@ -169,7 +169,7 @@
     position: absolute;
 }
 
-.check-input:checked + .icon-check {
+&:checked + .icon-check {
     background-color: var(--accent-color);
     background-image: url(./img/symbol-defs.svg#icon-check);
     background-size: contain;
@@ -196,6 +196,7 @@
     
     transition: background-color 250ms var(--cubic); 
 }
+
 .modal-form button:focus {
     outline: none;
 }

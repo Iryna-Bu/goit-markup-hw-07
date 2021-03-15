@@ -1,4 +1,4 @@
-.hero .container {
+.hero__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@
     color: var(--primary-white-color);
 }
 
-&__button {
+.hero__button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@
     border: none;
 }
 
-&__button:hover,
-&__button:focus {
+&:hover,
+&:focus {
     outline: none;
 }

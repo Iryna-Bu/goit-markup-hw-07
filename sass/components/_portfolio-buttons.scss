@@ -1,10 +1,9 @@
-
-.buttons-list {
+.button__list {
     display: flex;
     justify-content: center;
 }
 
-.item-button {
+.button__item{
     margin-top: 100px;
     margin-bottom: 50px;
     margin-right: 8px;
@@ -20,8 +19,8 @@
     border: none;
 }
 
-.primary-button:hover,
-.primary-button:focus {
+&:hover,
+&:focus {
     color: var(--accent-color);
     text-decoration: none;
 }
@@ -35,8 +34,8 @@
     color: var(--primary-text-color);
 }
 
-.secondary-button:hover,
-.secondary-button:focus {
+&:hover,
+&:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     text-decoration: none;
