@@ -70,7 +70,7 @@
     background-color: var(--accent-color);
 }
 
-.social-networks__icon {
+.link-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,8 +79,8 @@
     height:20px;
     fill: var(--primary-white-color); 
 }
-.social-networks__icon svg:hover, 
-.social-networks__icon svg:focus {
+.link-icon svg:hover, 
+.link-icon svg:focus {
     fill: var(--primary-white-color);
 }
 
